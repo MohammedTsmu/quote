@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Generator</title>
+
+    <!-- Stylesheet -->
+    <!-- bootstrap 4.0.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- Font awesome 6.0.0-->
+    <script
+      src="https://kit.fontawesome.com/92b9e9e786.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>
+        <i class="fa-solid fa-quote-left" style="color: #5470a0"></i> Quotes
+        Generator
+        <i class="fa-solid fa-quote-right" style="color: #5470a0"></i>
+      </h1>
+    </header>
+    <!-- Motivational message -->
+    <div id="motivation-message">
+      <div class="card">
+        <!-- Copy button -->
+        <button id="copyButton">
+          <i class="fa-solid fa-copy"> copy</i>
+        </button>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <i class="fa-solid fa-quote-left fa-beat-fade"></i>
+            <p id="message" class="message">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- new quote button -->
+    <div id="quote-container">
+      <button id="reload-btn" onclick="newQuote()">
+        <i id="quote">Generate</i>
+        <i class="fa-solid fa-arrows-rotate" id="arrows-rotate"></i>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p id="footerText"></p>
+    </footer>
+
+    <script src="footer.js"></script>
+    <script src="btnSync.js"></script>
+    <script src="copyBtn.js"></script>
+    <script src="quoteGenerator.js"></script>
+  </body>
+</html>

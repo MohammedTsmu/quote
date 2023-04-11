@@ -1,0 +1,136 @@
+/* Set the body background color to a dark shade */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+/* Set the header background color to a lighter shade of the body background */
+header {
+  background-color: #262626;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Set the footer background color to the same shade as the header */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #262626;
+  color: #ccc;
+}
+
+/* Set the blockquote and p text color to white */
+blockquote,
+p {
+  color: #fff;
+}
+
+/* Set the card background color to a darker shade of the body background */
+.card {
+  background-color: #111;
+  width: 80%;
+  margin: 5% auto;
+}
+
+/* Set the blockquote footer text color to a lighter shade of the body background */
+.blockquote-footer {
+  color: #ccc;
+}
+
+/* Override the default bootstrap link color to a lighter shade of the body background */
+a {
+  color: #bbb;
+}
+
+/* Set the link color to a lighter shade of the body background when hovering */
+a:hover {
+  color: #fff;
+}
+
+/* Set the background color and text color of the motivation message div */
+#motivation-message {
+  background-color: #333;
+  color: #fff;
+  display: none;
+}
+
+/* Reload */
+/* Reload button styles */
+#reload-btn,
+#copyButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+#copyButton {
+  background-color: #262626;
+  outline: none !important;
+}
+
+#reload-btn:hover {
+  background-color: #555;
+}
+
+/* Icon styles */
+i.fas {
+  font-size: 18px;
+}
+
+/* Quote container styles */
+#quote-container {
+  text-align: center;
+}
+
+/* Animated btn symbol sync */
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-block-end: 10px;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Set the card width to 90% and remove the margin */
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Set the font size for the reload button to 1rem */
+  #reload-btn,
+  #copyButton {
+    font-size: 1rem;
+  }
+}
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
